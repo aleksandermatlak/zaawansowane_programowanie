@@ -6,4 +6,3 @@ class Student:
     def is_passed(self) -> bool:
         avg = sum(self.marks)/len(self.marks)
         return avg > 50
-

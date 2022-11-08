@@ -6,7 +6,8 @@ class Property:
         self.area = area
 
     def __str__(self):
-        return f'Adres: {self.address}. Cena: {self.price}zł. Liczba pokoi:{self.rooms}. Osiedle: {self.area}'
+        return f'Adres: {self.address}. Cena: {self.price}zł.' \
+               f' Liczba pokoi:{self.rooms}. Osiedle: {self.area}'
 
 
 class House(Property):
