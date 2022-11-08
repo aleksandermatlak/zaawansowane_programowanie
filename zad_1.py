@@ -1,7 +1,9 @@
-def hello_name(name: str, surname: str) -> str:
-    return f'Cześć {name} {surname}!'
+class Student:
+    def __init__(self, name: str, marks: list):
+        self.marks = marks
+        self.name = name
 
+    def is_passed(self) -> bool:
+        avg = sum(self.marks)/len(self.marks)
+        return avg > 50
 
-test = hello_name('Aleksander', 'Matlak')
-
-print(test)
