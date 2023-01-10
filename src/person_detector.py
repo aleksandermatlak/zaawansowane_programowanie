@@ -16,7 +16,7 @@ def detection_model():
     return model
 
 
-def analyze_images(image, model):
+def analyze_image(image, model):
     # load image
     img = cv2.imread(image)
     # image conversion to RGB
